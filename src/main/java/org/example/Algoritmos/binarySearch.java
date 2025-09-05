@@ -1,6 +1,6 @@
 package org.example.Algoritmos;
 
-public class buscaBinaria {
+public class binarySearch {
     public static void buscaBinaria(int[] array, int item) {
         int valorBaixo = 0;
         int valorAlto = array.length - 1;

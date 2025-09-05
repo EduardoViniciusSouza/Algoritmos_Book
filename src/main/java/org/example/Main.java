@@ -1,8 +1,7 @@
 package org.example;
 
-import org.example.Algoritmos.buscaBinaria;
+import org.example.Algoritmos.binarySearch;
 import org.example.Algoritmos.selectionSort;
-import org.example.utils.buscaMenor;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -22,7 +21,8 @@ public class Main {
 
         System.out.println(
                 "1. Busca Binaria \n" +
-                "2. Selection Sort \n" );
+                "2. Selection Sort \n" +
+                "3. Recursividade \n");
         int opcaoEscolhida = sc.nextInt();
 
         switch (opcaoEscolhida) {
@@ -31,7 +31,7 @@ public class Main {
                 System.out.println("Escolha o valor inteiro a ser advinhado (1 a 100)");
                 int numero_advinhado = sc.nextInt();
 
-                buscaBinaria.buscaBinaria(array_ordenado, numero_advinhado);
+                binarySearch.buscaBinaria(array_ordenado, numero_advinhado);
             break;
             case 2:
                 System.out.println(" ");
@@ -39,6 +39,9 @@ public class Main {
                 System.out.println(Arrays.toString(array_desordenado));
                 System.out.println("***************************************************************************************");
                 selectionSort.selectionSort(array_desordenado);
+            break;
+            case 3:
+                System.out.println(" ");
         }
     }
 }
